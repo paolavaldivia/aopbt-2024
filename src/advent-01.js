@@ -1,0 +1,1 @@
+export default function(e){return[...e].sort(((e,t)=>e.age-t.age||e.name.codePointAt(0)-t.name.codePointAt(0)))}
