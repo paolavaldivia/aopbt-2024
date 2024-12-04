@@ -1,0 +1,1 @@
+export default function(e,t){let n=0,o=1e4,r=0,a=1e3,s=e.x,i=e.y,l=0;for(;s!==t.x||i!==t.y;){if(n>=o||r>=a)return Number.POSITIVE_INFINITY;const e=s,c=i;if(t.y<i?(a=i-1,i=Math.floor((a+r)/2)):t.y>i&&(r=i+1,i=Math.floor((a+r)/2)),t.x<s?(o=s-1,s=Math.floor((o+n)/2)):t.x>s&&(n=s+1,s=Math.floor((o+n)/2)),(e!==s||c!==i)&&(++l,l>1e3))return Number.POSITIVE_INFINITY}return l}
